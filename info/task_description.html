@@ -1,20 +1,35 @@
 <!-- Describe task in general -->
 <!-- <img src="{{MEDIA_CONVERT}}title.png" class="title_img" /> -->
 <p style="text-align: justify;">
-    Sum two passed ints
+    The hotel has a promotion for the July vacations. The promotion is valid for those who arrive from July 1st and leave on August 1st. The price of the hotel rate is lower for those who arrive earlier, and increases every day. More precisely, the promotion works like this:
 </p>
 
-<p style="text-align: center;">
-    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+<p style="text-align: justify;">
+    <ul>
+        <li>The daily rate of the hotel for each who arrives on <code>day</code> 1 is <code>rate</code>. Thus, those who arrive on <code>day</code> 1 will pay a total of <code>31 * rate</code>.</li>
+        <li>The hotel rate increases to the <code>incr</code> per day. That is, the daily rate is <code>rate + incr</code> for those who arrive on <code>day</code> 2; <code>rate + 2 * incr</code> on the 3rd <code>day</code> and so on.</li>
+        <li>From the 16th <code>day</code> onwards, the daily rate no longer increases.</li>
+    </ul>
 </p>
+<p style="text-align: justify;">
+    Note that those who arrive on day 2 will pay a total of 30 × (rate + incr); those who arrive on day 3 will pay a total of 29 × (rate + 2 × incr) and so on.
+</p>
+
+<p style="text-align: justify;">
+    Given the <code>day</code> of arrival (1 ≤ day ≤ 31), the initial <code>rate</code>  and the daily increase <code>incr</code>, calculate the total amount to be paid by a customer who arrives on that <code>day</code>.
+</p>
+
+<!-- <p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+</p> -->
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Input:</strong> Two arguments. Both are ints.
+    <strong>Input:</strong> Three integers <span translate="no">({% if is_js %}number{% else %}int{% endif %})</span>.
 </p>
 
 <p>
-    <strong>Output:</strong> Int. 
+    <strong>Output:</strong> Integer. 
 </p>
 
 
