@@ -1,0 +1,57 @@
+<!-- Describe task in general -->
+<!-- <img src="{{MEDIA_CONVERT}}title.png" class="title_img" /> -->
+<p style="text-align: justify;">
+    Das Hotel hat ein Sonderangebot für die Juli-Ferien. Das Angebot gilt für diejenigen, die ab dem 1. Juli anreisen und am 1. August abreisen. Der Preis der Hotelrate ist für diejenigen, die früher anreisen, niedriger und erhöht sich jeden Tag. Genauer gesagt, funktioniert das Angebot folgendermaßen:
+</p>
+
+<p style="text-align: justify;">
+    <ul>
+        <li>Der Tagespreis des Hotels für alle, die am <code>day</code> 1 ankommen, ist <code>rate</code>. Wer also am <code>day</code> 1 ankommt, zahlt insgesamt <code>31 * rate</code>.</li>
+        <li>Der Hotelpreis erhöht sich auf den <code>incr</code> pro Tag. Das heißt, der Tagessatz beträgt <code>rate + incr</code> für diejenigen, die am <code>day</code> 2 ankommen; <code>rate + 2 * incr</code> am 3. <code>day</code> und so weiter.</li>
+        <li>Ab dem 16. <code>day</code> erhöht sich der Tagessatz nicht mehr.</li>
+    </ul>
+</p>
+<p style="text-align: justify;">
+    Beachten Sie, dass diejenigen, die am 2. Tag ankommen, insgesamt 30 × (Tarif + incr) zahlen; diejenigen, die am 3. Tag ankommen, zahlen insgesamt 29 × (Tarif + 2 × incr) und so weiter.
+</p>
+
+<p style="text-align: justify;">
+    Angesichts der <code>day</code> der Ankunft (1 ≤ Tag ≤ 31), der anfänglichen <code>rate</code> und der täglichen Erhöhung <code>incr</code>, berechnen Sie den Gesamtbetrag, den ein Kunde, der an diesem <code>day</code> ankommt, zu zahlen hat.
+</p>
+
+<!-- <p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+</p> -->
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> Drei ganze Zahlen <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> Ganzzahl. 
+</p>
+
+
+<p>
+    <strong>Beispiele:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
