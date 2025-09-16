@@ -1,0 +1,57 @@
+<!-- Describe task in general -->
+<!-- <img src="{{MEDIA_CONVERT}}title.png" class="title_img" /> -->
+<p style="text-align: justify;">
+    酒店为七月假期推出促销活动。促销活动适用于从 7 月 1 日抵达至 8 月 1 日离开的游客。提前入住的客人房价较低，但每天都会上涨。更准确地说，促销活动是这样进行的
+</p>
+
+<p style="text-align: justify;">
+    <ul>
+        <li><code>day</code> 1 日抵达者的每日酒店房价为<code>rate</code> 。因此，在<code>day</code> 1 到达酒店的客人总共只需支付<code>31 * rate</code> 。</li>
+        <li>酒店每日房价增至<code>incr</code> 。即<code>day</code> 2 日到达者的每日房价为<code>rate + incr</code> ；<code>rate + 2 * incr</code> 3 日到达者的每日房价为<code>day</code> ，依此类推。</li>
+        <li>从 16 日<code>day</code> 开始，每日房价不再上涨。</li>
+    </ul>
+</p>
+<p style="text-align: justify;">
+    需要注意的是，第 2 天到达的游客总共需要支付 30 ×（房价 + incr）；第 3 天到达的游客总共需要支付 29 ×（房价 + 2 × incr），以此类推。
+</p>
+
+<p style="text-align: justify;">
+    给定到达的<code>day</code> （1 ≤ 日 ≤ 31）、初始<code>rate</code> 和每日增加额<code>incr</code> ，计算在该日到达的客户应支付的总金额<code>day</code> 。
+</p>
+
+<!-- <p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+</p> -->
+
+<!-- Explain input and output values -->
+<p>
+   <strong>输入：</strong>三个整数 <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>输出：</strong>整数。 
+</p>
+
+
+<p>
+    <strong>示例</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
