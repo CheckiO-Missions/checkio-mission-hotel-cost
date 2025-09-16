@@ -1,0 +1,57 @@
+<!-- Describe task in general -->
+<!-- <img src="{{MEDIA_CONVERT}}title.png" class="title_img" /> -->
+<p style="text-align: justify;">
+    Hotel ma promocję na lipcowe wakacje. Promocja jest ważna dla tych, którzy przyjeżdżają od 1 lipca i wyjeżdżają 1 sierpnia. Cena hotelu jest niższa dla tych, którzy przyjeżdżają wcześniej i rośnie każdego dnia. Dokładniej, promocja działa w następujący sposób:
+</p>
+
+<p style="text-align: justify;">
+    <ul>
+        <li>Dzienna stawka hotelowa dla każdego, kto przyjedzie na <code>day</code> 1 wynosi <code>rate</code>. Tak więc osoby, które przyjadą w dniu <code>day</code> 1 zapłacą łącznie <code>31 * rate</code>.</li>
+        <li>Stawka hotelowa wzrasta do <code>incr</code> za dzień. Oznacza to, że dzienna stawka wynosi <code>rate + incr</code> dla osób, które przybędą w dniu <code>day</code> 2; <code>rate + 2 * incr</code> w dniu 3 <code>day</code> i tak dalej.</li>
+        <li>Od 16. <code>day</code> stawka dzienna nie wzrasta.</li>
+    </ul>
+</p>
+<p style="text-align: justify;">
+    Proszę zauważyć, że osoby, które przybędą w dniu 2, zapłacą łącznie 30 × (stawka + incr); osoby, które przybędą w dniu 3, zapłacą łącznie 29 × (stawka + 2 × incr) i tak dalej.
+</p>
+
+<p style="text-align: justify;">
+    Biorąc pod uwagę <code>day</code> przybycia (1 ≤ dzień ≤ 31), początkową <code>rate</code> i dzienny wzrost <code>incr</code>, proszę obliczyć całkowitą kwotę do zapłaty przez klienta, który przybędzie w tym <code>day</code>.
+</p>
+
+<!-- <p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+</p> -->
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Dane wejściowe:</strong> Trzy liczby całkowite <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Wyjście:</strong> Liczba całkowita. 
+</p>
+
+
+<p>
+    <strong>Przykłady:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
