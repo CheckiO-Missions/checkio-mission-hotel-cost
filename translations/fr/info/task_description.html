@@ -1,0 +1,57 @@
+<!-- Describe task in general -->
+<!-- <img src="{{MEDIA_CONVERT}}title.png" class="title_img" /> -->
+<p style="text-align: justify;">
+    L'hôtel propose une promotion pour les vacances de juillet. La promotion est valable pour ceux qui arrivent à partir du 1er juillet et partent le 1er août. Le prix de l'hôtel est plus bas pour ceux qui arrivent plus tôt, et augmente chaque jour. Plus précisément, la promotion fonctionne comme suit:
+</p>
+
+<p style="text-align: justify;">
+    <ul>
+        <li><code>day</code> Le tarif journalier de l'hôtel pour toute personne arrivant le 1er juillet est de <code>rate</code>. Ainsi, ceux qui arrivent le <code>day</code> 1 paieront un total de <code>31 * rate</code>.</li>
+        <li>Le tarif de l'hôtel passe à <code>incr</code> par jour. En d'autres termes, le tarif journalier est de <code>rate + incr</code> pour ceux qui arrivent le <code>day</code> 2; <code>rate + 2 * incr</code> le 3 <code>day</code> et ainsi de suite.</li>
+        <li>À partir du 16 <code>day</code>, le tarif journalier n'augmente plus.</li>
+    </ul>
+</p>
+<p style="text-align: justify;">
+    Notez que les personnes qui arrivent le 2e jour paieront un total de 30 × (taux + incr); celles qui arrivent le 3e jour paieront un total de 29 × (taux + 2 × incr) et ainsi de suite.
+</p>
+
+<p style="text-align: justify;">
+    Étant donné le <code>day</code> d'arrivée (1 ≤ jour ≤ 31), le <code>rate</code> initial et l'augmentation quotidienne <code>incr</code>, calculez le montant total à payer par un client qui arrive le <code>day</code>.
+</p>
+
+<!-- <p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+</p> -->
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Entrée:</strong> Trois entiers <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Sortie:</strong> Entier. 
+</p>
+
+
+<p>
+    <strong>Exemples:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
